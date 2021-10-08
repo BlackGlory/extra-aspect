@@ -66,6 +66,7 @@
   },
   "dependencies": {
     "@blackglory/types": "^0.5.1",
+    "core-js": "^3.18.2",
     "extra-promise": "^0.18.7",
     "justypes": "^0.1.6"
   }

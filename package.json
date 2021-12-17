@@ -67,9 +67,9 @@
     "typescript": "^4.5.4"
   },
   "dependencies": {
-    "@blackglory/types": "^0.6.3",
+    "@blackglory/types": "^0.6.4",
     "core-js": "^3.20.0",
-    "extra-promise": "^0.20.0",
+    "extra-promise": "^0.21.0",
     "justypes": "^0.1.6"
   }
 }

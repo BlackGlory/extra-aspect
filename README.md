@@ -1,7 +1,5 @@
 # extra-aspect
-
 ## Install
-
 ```sh
 npm install --save extra-aspect
 # or
@@ -9,7 +7,6 @@ yarn add extra-aspect
 ```
 
 ## Usage
-
 ```ts
 import { aspect } from 'extra-aspect'
 
@@ -32,7 +29,6 @@ console.log(fn())
 ```
 
 ## API
-
 ```ts
 type IHooks<T> = {
   before?: Arrayable<() => unknown>
@@ -50,26 +46,32 @@ type IAsyncHooks<T> = {
 ```
 
 ### aspect
-
 ```ts
 function aspect<T, Args extends any[]>(
   fn: (...args: Args) => T
 , hooks: IHooks<T>
 ): (...args: Args) => T
+function aspect<T, Args extends any[]>(
+  hooks: IHooks<T>
+, fn: (...args: Args) => T
+): (...args: Args) => T
 ```
 
 ### aspectAsync
-
 ```ts
 function aspectAsync<T, Args extends any[]>(
   fn: (...args: Args) => PromiseLike<T>
 , hooks: IAsyncHooks<T>
 , concurrency: number = 1
 ): (...args: Args) => Promise<T>
+function aspectAsync<T, Args extends any[]>(
+  hooks: IAsyncHooks<T>
+, fn: (...args: Args) => PromiseLike<T>
+, concurrency: number = 1
+): (...args: Args) => Promise<T>
 ```
 
 ### compose
-
 ```ts
 function compose<T>(...hooks: Array<IHooks<T>>): IHooks<T>
 function compose<T>(...hooks: Array<IAsyncHooks<T>>): IAsyncHooks<T>

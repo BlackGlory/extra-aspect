@@ -1,6 +1,6 @@
 import { IHooks, IAsyncHooks } from './types'
 import { isntUndefined } from '@blackglory/types'
-import flatten from 'lodash.flatten'
+import flatten from 'lodash/flatten'
 
 export function compose<T>(...hooks: Array<IHooks<T>>): IHooks<T>
 export function compose<T>(...hooks: Array<IAsyncHooks<T>>): IAsyncHooks<T>

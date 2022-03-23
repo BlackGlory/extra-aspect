@@ -47,7 +47,7 @@
     "@rollup/plugin-replace": "^4.0.0",
     "@rollup/plugin-typescript": "^8.3.1",
     "@types/jest": "^27.4.1",
-    "@types/lodash.flatten": "^4.4.6",
+    "@types/lodash": "^4.14.180",
     "@typescript-eslint/eslint-plugin": "^5.16.0",
     "@typescript-eslint/parser": "^5.16.0",
     "eslint": "^8.11.0",
@@ -69,6 +69,6 @@
     "@blackglory/types": "^1.0.1",
     "extra-promise": "^1.0.1",
     "justypes": "^2.0.0",
-    "lodash.flatten": "^4.4.0"
+    "lodash": "^4.17.21"
   }
 }
